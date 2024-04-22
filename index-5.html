@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Quotare - Multipurpose Quotation Request HTML Wizard Form">
+    <meta name="author" content="Ansonika">
+    <title>Quotare - Multipurpose Quotation Request HTML Wizard Form</title>
+    
+    <!-- Favicons-->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" type="image/x-icon" href="img/apple-touch-icon-57x57-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="img/apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="img/apple-touch-icon-144x144-precomposed.png">
+
+    <!-- GOOGLE WEB FONT -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- BASE CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+	<link href="css/vendors.css" rel="stylesheet">
+
+    <!-- YOUR CUSTOM CSS -->
+    <link href="css/custom.css" rel="stylesheet">
+
+</head>
+
+<body class="bg_style_4">
+
+    <div id="preloader">
+        <div data-loader="circle-side"></div>
+    </div><!-- /Preload -->
+
+    <div id="loader_form">
+        <div data-loader="circle-side-2"></div>
+    </div><!-- /loader_form -->
+
+<div class="min-vh-100 d-flex flex-column bg_cover">
+
+    <header>
+        <div class="container-fluid">
+            <div class="row d-flex align-items-center">
+                <div class="col-6">
+                    <a data-bs-toggle="offcanvas" href="#offcanvasNav" role="button" class="btn_nav me-2"><i class="bi bi-list"></i></a>
+                    <a href="index.html"><img src="img/logo.svg" alt="" width="100" height="35" class="img-fluid"></a>
+                </div>
+                <div class="col-6">
+                    <div id="social">
+                        <ul>
+                            <li><a href="#0"><i class="bi bi-facebook"></i></a></li>
+                            <li><a href="#0"><i class="bi bi-twitter-x"></i></a></li>
+                            <li><a href="#0"><i class="bi bi-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                    <!-- /social -->
+                </div>
+            </div>
+        </div>
+        <!-- /container -->
+    </header>
+    <!-- /header -->
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNav">
+	    <div class="offcanvas-header">
+	        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+	    </div>
+	    <div class="offcanvas-body">
+            <ul>
+                <li><a href="index.html" class="animated_link">SEO Services</a></li>
+                <li><a href="index-2.html" class="animated_link">Home Alarms</a></li>
+                <li><a href="index-3.html" class="animated_link">Removals</a></li>
+                <li><a href="index-4.html" class="animated_link">Web Services Calculator</a></li>
+                <li><a href="index-5.html" class="animated_link">Web Services Branch</a></li>
+            </ul>
+            <hr>
+            <ul>
+                <li><a href="contact.html" class="animated_link">Contacts</a></li>
+                <li><a href="#0" class="animated_link">Purchase this template</a></li>
+            </ul>
+        </div>
+	</div>
+	<!-- /offcanvas nav -->
+
+    <div class="container-fluid d-flex flex-column my-auto py-3">
+        <div>
+            <div id="wizard_container">
+                <div id="top-wizard">
+                    <div id="progressbar"></div>
+                </div>
+                <!-- /top-wizard -->
+                <div class="decorative_bg bg_4"></div>
+                <form id="wrapped" method="POST">
+                    <input id="website" name="website" type="text" value="">
+                    <!-- Leave input above for security protection, read docs for details -->
+                    <div id="middle-wizard">
+                        <!-- /Start Branch ============================== -->
+                        <div class="step" data-state="branchtype">
+                            <div class="question_title">
+                                <h3>Which <span class="highlight">type of Product</span> do you need?</h3>
+                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+                            </div>
+                            <div class="row justify-content-center">
+                                <div class="col-lg-10 col-md-10">
+                                    <div class="list_block_icons">
+                                        <ul>
+                                            <li>
+                                                <div class="item form-group mb-0">
+                                                    <input id="wordpress" type="radio" name="product_opt" value="Wordpress" class="required">
+                                                    <label for="wordpress">
+                                                        <img src="img/Wordpress-Logo.svg" alt="" width="60" height="60"><strong>Wordpress</strong>
+                                                    </label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="item form-group mb-0">
+                                                    <input id="shopify" type="radio" name="product_opt" value="Shopify" class="required">
+                                                    <label for="shopify">
+                                                        <img src="img/shopify.svg" alt="" width="60" height="60"><strong>Shopify</strong>
+                                                    </label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="item form-group mb-0">
+                                                    <input id="magento" type="radio" name="product_opt" value="Magento" class="required">
+                                                    <label for="magento">
+                                                        <img src="img/magento.svg" alt="" width="60" height="60"><strong>Magento</strong>
+                                                    </label>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- /list_block-->
+                                    <small>* Start branch radio based </small>
+                                </div>
+                            </div>
+                            <!-- /row -->
+                        </div>
+                        <!-- /Step -->
+                        
+                        <!-- Wordpress branch ============================== -->
+                        <div class="branch" id="Wordpress">
+                            <div class="step" data-state="personal_details">
+                                <div class="question_title">
+                                    <h3>Popular Services from <span class="highlight">WordPress Experts</span> </h3>
+                                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+                                </div>
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-7 col-md-10">
+                                        <div class="list_block products">
+                                            <ul>
+                                                <li>
+                                                    <a href="#0" class="tooltip_icon" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.">
+                                                        <i class="bi bi-question-circle"></i>
+                                                    </a>
+                                                    <div class="checkbox_radio_container">
+                                                        <input type="checkbox" id="installation" name="wordpress_services[]" class="required" value="Installation & Setup $40" data-price="40">
+                                                        <label class="checkbox" for="installation"></label>
+                                                        <label for="installation" class="wrapper">Installation & Setup <strong class="item_price">$40</strong></label>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <a href="#0" class="tooltip_icon" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.">
+                                                        <i class="bi bi-question-circle"></i>
+                                                    </a>
+                                                    <div class="checkbox_radio_container">
+                                                        <input type="checkbox" id="plugins" name="wordpress_services[]" class="required" value="Must-Have Plugins $60" data-price="60">
+                                                        <label class="checkbox" for="plugins"></label>
+                                                        <label for="plugins" class="wrapper">Must-Have Plugins <strong class="item_price">$60</strong></label>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <a href="#0" class="tooltip_icon" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.">
+                                                        <i class="bi bi-question-circle"></i>
+                                                    </a>
+                                                    <div class="checkbox_radio_container">
+                                                        <input type="checkbox" id="customization" name="wordpress_services[]" class="required" value="Classic Customization $100" data-price="100">
+                                                        <label class="checkbox" for="customization"></label>
+                                                        <label for="customization" class="wrapper">Classic Customization <strong class="item_price">$100</strong></label>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <a href="#0" class="tooltip_icon" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.">
+                                                        <i class="bi bi-question-circle"></i>
+                                                    </a>
+                                                    <div class="checkbox_radio_container">
+                                                        <input type="checkbox" id="customization_seo" name="wordpress_services[]" class="required" value="Customization + SEO $140" data-price="140">
+                                                        <label class="checkbox" for="customization_seo"></label>
+                                                        <label for="customization_seo" class="wrapper">Customization + SEO <strong class="item_price">$140</strong></label>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <div class="total_price">Total <input class="final_price" name="final_price" value="$0"></div>
+                                        </div>
+                                        <!-- /list_block-->
+                                    </div>
+                                </div>
+                                <!-- /row -->
+                            </div>
+                            <!-- /Step -->
+                        </div>
+                        <!-- /end branch wordpress-->
+                        <!-- Shopify Branch ============================== -->
+                        <div class="branch" id="Shopify">
+                            <div class="step" data-state="personal_details">
+                                <div class="question_title">
+                                    <h3>Popular Services from <span class="highlight">Shopify Experts</span></h3>
+                                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+                                </div>
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-7 col-md-10">
+                                        <div class="list_block products">
+                                            <ul>
+                                                <li>
+                                                    <a href="#0" class="tooltip_icon" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.">
+                                                        <i class="bi bi-question-circle"></i>
+                                                    </a>
+                                                    <div class="checkbox_radio_container">
+                                                        <input type="checkbox" id="installation_shopify" name="shopify_services[]" class="required" value="Installation & Setup $30" data-price="30">
+                                                        <label class="checkbox" for="installation_shopify"></label>
+                                                        <label for="installation_shopify" class="wrapper">Installation & Setup <strong class="item_price">$30</strong></label>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <a href="#0" class="tooltip_icon" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.">
+                                                        <i class="bi bi-question-circle"></i>
+                                                    </a>
+                                                    <div class="checkbox_radio_container">
+                                                        <input type="checkbox" id="plugins_shopify" name="shopify_services[]" class="required" value="Must-Have Plugins $50" data-price="50">
+                                                        <label class="checkbox" for="plugins_shopify"></label>
+                                                        <label for="plugins_shopify" class="wrapper">Must-Have Plugins <strong class="item_price">$50</strong></label>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <a href="#0" class="tooltip_icon" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.">
+                                                        <i class="bi bi-question-circle"></i>
+                                                    </a>
+                                                    <div class="checkbox_radio_container">
+                                                        <input type="checkbox" id="customization_shopify" name="shopify_services[]" class="required" value="Classic Customization $120" data-price="120">
+                                                        <label class="checkbox" for="customization_shopify"></label>
+                                                        <label for="customization_shopify" class="wrapper">Classic Customization <strong class="item_price">$120</strong></label>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <a href="#0" class="tooltip_icon" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.">
+                                                        <i class="bi bi-question-circle"></i>
+                                                    </a>
+                                                    <div class="checkbox_radio_container">
+                                                        <input type="checkbox" id="customization_seo_shopify" name="shopify_services[]" class="required" value="Customization + SEO $170" data-price="170">
+                                                        <label class="checkbox" for="customization_seo_shopify"></label>
+                                                        <label for="customization_seo_shopify" class="wrapper">Customization + SEO <strong class="item_price">$170</strong></label>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <div class="total_price">Total <input class="final_price" name="final_price" value="$0"></div>
+                                        </div>
+                                        <!-- /list_block-->
+                                    </div>
+                                </div>
+                                <!-- /row -->
+                            </div>
+                            <!-- /Step -->
+                        </div>
+                        <!-- /end branch shopify-->
+
+                        <!-- Magento Branch ============================== -->
+                        <div class="branch" id="Magento">
+                            <div class="step" data-state="personal_details">
+                                <div class="question_title">
+                                    <h3>Popular Services from <span class="highlight">Magento Experts</span></h3>
+                                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+                                </div>
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-7 col-md-10">
+                                        <div class="list_block products">
+                                            <ul>
+                                                <li>
+                                                    <a href="#0" class="tooltip_icon" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.">
+                                                        <i class="bi bi-question-circle"></i>
+                                                    </a>
+                                                    <div class="checkbox_radio_container">
+                                                        <input type="checkbox" id="installation_magento" name="magento_services[]" class="required" value="Installation & Setup $50" data-price="50">
+                                                        <label class="checkbox" for="installation_magento"></label>
+                                                        <label for="installation_magento" class="wrapper">Installation & Setup <strong class="item_price">$50</strong></label>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <a href="#0" class="tooltip_icon" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.">
+                                                        <i class="bi bi-question-circle"></i>
+                                                    </a>
+                                                    <div class="checkbox_radio_container">
+                                                        <input type="checkbox" id="plugins_magento" name="magento_services[]" class="required" value="Must-Have Plugins $80" data-price="80">
+                                                        <label class="checkbox" for="plugins_magento"></label>
+                                                        <label for="plugins_magento" class="wrapper">Must-Have Plugins <strong class="item_price">$80</strong></label>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <a href="#0" class="tooltip_icon" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.">
+                                                        <i class="bi bi-question-circle"></i>
+                                                    </a>
+                                                    <div class="checkbox_radio_container">
+                                                        <input type="checkbox" id="customization_magento" name="magento_services[]" class="required" value="Classic Customization $130" data-price="130">
+                                                        <label class="checkbox" for="customization_magento"></label>
+                                                        <label for="customization_magento" class="wrapper">Classic Customization <strong class="item_price">$130</strong></label>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <a href="#0" class="tooltip_icon" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.">
+                                                        <i class="bi bi-question-circle"></i>
+                                                    </a>
+                                                    <div class="checkbox_radio_container">
+                                                        <input type="checkbox" id="customization_seo_magento" name="magento_services[]" class="required" value="Customization + SEO $190" data-price="190">
+                                                        <label class="checkbox" for="customization_seo_magento"></label>
+                                                        <label for="customization_seo_magento" class="wrapper">Customization + SEO <strong class="item_price">$190</strong></label>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <div class="total_price">Total <input class="final_price" name="final_price" value="$0"></div>
+                                        </div>
+                                        <!-- /list_block-->
+                                    </div>
+                                </div>
+                                <!-- /row -->
+                            </div>
+                            <!-- /Step -->
+                        </div>
+                        <!-- /end branch magento-->
+
+                        <div class="submit step" id="personal_details">
+                            <div class="question_title">
+                                <h3>Please fill with your <span class="highlight">Details</span></h3>
+                                <p>A summary of your request will be sent to your email address.</p>
+                            </div>
+                            <div class="row justify-content-center">
+                                <div class="col-md-7">
+                                    <div class="form-group">
+                                        <input type="text" name="first_last_name" id="first_last_name" class="form-control required">
+                                        <label for="first_last_name">First and Last Name</label>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" name="email" id="email" class="form-control required">
+                                        <label for="email">Your Email</label>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" name="telephone" id="telephone" class="form-control required">
+                                        <label for="telephone">Your Telephone</label>
+                                    </div>
+                                    <div class="terms">
+                                        <label class="container_check">Please accept our <a href="#" data-bs-toggle="modal" data-bs-target="#terms-txt">Terms and conditions</a>
+                                            <input type="checkbox" name="terms" value="Yes" class="required">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /row -->
+                        </div>
+                        <!-- /Step -->
+                    </div>
+                    <!-- /middle-wizard -->
+                    <div id="bottom-wizard">
+                        <button type="button" name="backward" class="backward btn_1">Prev</button>
+                        <button type="button" name="forward" class="forward btn_1">Next</button>
+                        <button type="submit" name="process" class="submit btn_1">Submit</button>
+                    </div>
+                    <!-- /bottom-wizard -->
+                </form>
+            </div>
+            <!-- /Wizard container -->
+        </div>
+    </div>
+    <!-- /Container -->
+
+    <footer>
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-sm-6">
+                    <p>© 2023 Quotare</p>
+                </div>
+            </div>
+            <!-- /Row -->
+        </div>
+        <!-- /Container -->
+    </footer>
+    <!-- /Footer -->
+
+</div>
+<!-- /flex-column -->
+
+
+<!-- Modal terms -->
+<div class="modal fade" id="terms-txt" tabindex="-1" role="dialog" aria-labelledby="termsLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="termsLabel">Terms and conditions</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Lorem ipsum dolor sit amet, in porro albucius qui, in <strong>nec quod novum accumsan</strong>, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum sanctus, pro ne quod dicunt sensibus.</p>
+                <p>Lorem ipsum dolor sit amet, in porro albucius qui, in nec quod novum accumsan, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum sanctus, pro ne quod dicunt sensibus. Lorem ipsum dolor sit amet, <strong>in porro albucius qui</strong>, in nec quod novum accumsan, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum sanctus, pro ne quod dicunt sensibus.</p>
+                <p>Lorem ipsum dolor sit amet, in porro albucius qui, in nec quod novum accumsan, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum sanctus, pro ne quod dicunt sensibus.</p>
+            </div>
+        </div>
+        <!-- /modal-content -->
+    </div>
+    <!-- /modal-dialog -->
+</div>
+<!-- /modal -->
+	
+<!-- COMMON SCRIPTS -->
+<script src="js/common_scripts.min.js"></script>
+<script src="js/common_functions.js"></script>
+
+<!-- SPECIFIC SCRIPTS -->
+<script src="js/wizard_func_5.js"></script>
+
+</body>
+</html>

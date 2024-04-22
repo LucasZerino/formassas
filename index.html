@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="SETIRN - Formulário de Onboarding">
+    <meta name="author" content="Lucas Zerino">
+    <title>SETIRN - Formulário de Onboarding</title>
+    
+    <!-- Favicons-->
+    <link rel="shortcut icon" href="./imgBolt/logoSetirn.png" type="image/x-icon">
+    <link rel="apple-touch-icon" type="image/x-icon" href="img/apple-touch-icon-57x57-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="img/apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="img/apple-touch-icon-144x144-precomposed.png">
+
+    <!-- GOOGLE WEB FONT -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- BASE CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+	<link href="css/vendors.css" rel="stylesheet">
+
+    <!-- YOUR CUSTOM CSS -->
+    <link href="css/custom.css" rel="stylesheet">
+
+</head>
+
+<body class="bg_style_3">
+
+<div id="preloader">
+    <div data-loader="circle-side"></div>
+</div><!-- /Preload -->
+<div id="loader_form"  class="loader">
+    <div data-loader="circle-side-2"></div>
+</div><!-- /loader_form -->
+
+
+<div class="min-vh-100 d-flex flex-column bg_cover">
+
+    <header>
+        <div class="container-fluid">
+            <div class="row d-flex align-items-center">
+                <div class="col-6">
+                    <a href="index.html"><img src="./imgBolt/logoSetirn.png" alt="" width="100" height="35" class="img-fluid"></a>
+                </div>
+                <div class="col-6">
+                    <div id="social">
+                        <ul>
+                            
+                        </ul>
+                    </div>
+                    <!-- /social -->
+                </div>
+            </div>
+        </div>
+        <!-- /container -->
+    </header>
+    <!-- /header -->
+	<!-- /offcanvas nav -->
+
+    <div class="container-fluid d-flex flex-column my-auto py-3">
+        <div class="principal">
+            <div id="wizard_container">
+                <div id="top-wizard">
+                    <div id="progressbar"></div>
+                </div>
+                <!-- /top-wizard -->
+                <div class="decorative_bg bg_3"></div>
+                <form id="wrapped" >
+                    <input id="website" name="website" type="text" value="">
+                    <!-- Leave input above for security protection, read docs for details -->
+                    <div id="middle-wizard">
+                        <div class="step">
+                            <div class="question_title">
+                                <h3>Olá! Seja bem-vindo(a) ao <span class="highlight"> SETIRN!</span></h3>
+                                <p class="descricaosubtit">Nós somos o Sindicato das Empresas de Tecnologia da Informação do RN, agora EpTec, 
+                                    Empresas Potiguares de Tecnologia, uma associação de empresários de TI, participe!
+                                </p>
+                            </div>
+                            <div class="row justify-content-center">
+                                <div class="col-lg-7 col-md-10">
+                                    <div class="list_block">
+                                        <div class="form-group">
+                                            <input type="email" name="email" id="email" class="form-control required">
+                                            <label for="email">Digite o seu Email</label>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="number" name="numero" id="numero" class="form-control required">
+                                            <label for="numero">Digite o número para contato</label>
+                                        </div>
+                                         <div class="form-group">
+                                            <input type="text" name="nomeEmpresa" id="nomeEmpresa" class="form-control required">
+                                            <label for="nomeEmpresa">Digite o nome da sua Empresa</label>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" name="cnpj" id="cnpj" class="form-control required">
+                                            <label for="cnpj">Digite o seu CNPJ</label>
+                                        </div>
+                                        <small><em>A taxa de filiação (paga no ato da inscrição) R$130 (cento e trinta reais).</em></small>
+                                          <small><em><strong>A cobrança mensal será enviada por email. *</strong></em></small>
+                                    </div>
+                                    <!-- /list_block-->
+                                </div>
+                            </div>
+                            <!-- /row -->
+                        </div>
+                        <!-- /Step -->
+                        <!-- /Step -->
+                        <div class="step">
+                            <div class="question_title">
+                                <h3><span class="highlight">Nos informa onde</span> está sua empresa!</h3>
+                            </div>
+                            <div class="row justify-content-center">
+                                <div class="col-md-10">
+                                    <div class="form-group">
+                                        <input type="text" name="cepususario" id="cepususario" class="form-control required">
+                                        <label for="cepususario">Cep</label>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <div class="form-floating form-group">
+                                                    <input type="text" name="cidade" id="cidade" class="form-control required">
+                                                    <label for="cidade">Cidade</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <select class="form-select required" id="estado" name="estado" aria-label="Country">
+                                                    <option selected disabled>Estado</option>
+                                                    <option value="AC">Acre</option>
+                                                    <option value="AL">Alagoas</option>
+                                                    <option value="AP">Amapá</option>
+                                                    <option value="AM">Amazonas</option>
+                                                    <option value="BA">Bahia</option>
+                                                    <option value="CE">Ceará</option>
+                                                    <option value="DF">Distrito Federal</option>
+                                                    <option value="ES">Espírito Santo</option>
+                                                    <option value="GO">Goiás</option>
+                                                    <option value="MA">Maranhão</option>
+                                                    <option value="MT">Mato Grosso</option>
+                                                    <option value="MS">Mato Grosso do Sul</option>
+                                                    <option value="MG">Minas Gerais</option>
+                                                    <option value="PA">Pará</option>
+                                                    <option value="PB">Paraíba</option>
+                                                    <option value="PR">Paraná</option>
+                                                    <option value="PE">Pernambuco</option>
+                                                    <option value="PI">Piauí</option>
+                                                    <option value="RJ">Rio de Janeiro</option>
+                                                    <option value="RN">Rio Grande do Norte</option>
+                                                    <option value="RS">Rio Grande do Sul</option>
+                                                    <option value="RO">Rondônia</option>
+                                                    <option value="RR">Roraima</option>
+                                                    <option value="SC">Santa Catarina</option>
+                                                    <option value="SP">São Paulo</option>
+                                                    <option value="SE">Sergipe</option>
+                                                    <option value="TO">Tocantins</option>
+                                                </select>
+                                                <label for="estado">Estado</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <div class="form-floating form-group">
+                                                    <input type="text" name="rua" id="rua" class="form-control required">
+                                                    <label for="rua">Rua</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <div class="form-floating form-group">
+                                                    <input type="number" name="numero" id="numero" class="form-control required">
+                                                    <label for="numero">Número</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /row -->
+                                    <hr class="mt-0">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="form-group">
+                                                <div class="form-floating form-group">
+                                                    <input type="text" name="complemento" id="complemento" class="form-control">
+                                                    <label for="complemento">Complemento</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /row -->
+                                </div>
+                            </div>
+                            <!-- /row -->
+                        </div>
+                        <!-- /Step -->
+                        <!-- /Step -->
+                        <div class="submit step">
+                            <div class="question_title">
+                                <h3>Qual sua <span class="highlight">forma de pagamento</span> preferida?</h3>
+                                <p>Esse pagamento será referente a taxa de filiação</p>
+                            </div>
+                            <div class="row justify-content-center">
+                                <div class="col-lg-10 col-md-10">
+                                    <div class="list_block_icons">
+                                        <ul>
+                                            <li>
+                                                <div class="item form-group mb-0">
+                                                    <input id="pix" type="radio" name="product_opt" value="pix" class="required">
+                                                    <label for="pix">
+                                                        <img src="./imgBolt/pix.png" alt="" width="60" height="60"><strong>Pix</strong>
+                                                    </label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="item form-group mb-0">
+                                                    <input id="cartao" type="radio" name="product_opt" value="cartao" class="required">
+                                                    <label for="cartao">
+                                                        <img src="./imgBolt/cartao.png" alt="" width="60" height="60"><strong>Cartão</strong>
+                                                    </label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="item form-group mb-0">
+                                                    <input id="boleto" type="radio" name="product_opt" value="boleto" class="required">
+                                                    <label for="boleto">
+                                                        <img src="./imgBolt/boleto.png" alt="" width="60" height="60"><strong>Boleto</strong>
+                                                    </label>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- /list_block-->
+                                    <small><strong>* 130 R$</strong></small>
+                                </div>
+                            <!-- /row-->
+                        </div>
+
+                        
+                    
+                        <!-- /Step -->
+                    </div>
+                    <!-- /middle-wizard -->
+                    <div id="bottom-wizard">
+                        <button type="button" name="backward" class="backward btn_1">Anterior</button>
+                        <button type="button" name="forward" class="forward btn_1">Próximo</button>
+                        <button type="submit" name="process" class="submit btn_1">Ir para pagamento</button>
+                    </div>
+                    <!-- /bottom-wizard -->
+                </form>
+            </div>
+            <!-- /Wizard container -->
+        </div>
+        <div class="secundario">
+            <div id="wizard_container">
+                <div id="top-wizard">
+                    <div id="progressbar"></div>
+                </div>
+                <!-- /top-wizard -->
+                <div class="decorative_bg bg_3"></div>
+                <form id="wrapped" >
+                    <input id="website" name="website" type="text" value="">
+                    <!-- Leave input above for security protection, read docs for details -->
+                    <div id="middle-wizard">
+                        <div class="containercenter">
+                            <div class="question_title">
+                                <h3><span class="highlight"> Parabéns!</span></h3>
+                                <p class="descricaosubtit">Você iniciou um passo importante no sucesso da sua empresa, 
+                                    clique no botão a baixo para pagar sua taxa de adesão!
+                                </p>
+                            </div>
+                            <div class="row justify-content-center">
+                                <div class="col-lg-7 col-md-10">
+                                    <div class="list_block">
+                                       <div class="botaoadd">
+                                        <a class="btn2" id="seuBotao">
+                                            <span>
+                                                Ir para o pagamento
+                                            </span>
+                                        </a>
+                                       </div>
+                                          <small><em><strong>A taxa de filiação (paga no ato da inscrição) R$130 (cento e trinta reais). *</strong></em></small>
+                                    </div>
+                                    <!-- /list_block-->
+                                </div>
+                            </div>
+                            <!-- /row -->
+                        </div></div>
+                        <!-- /Step -->
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="popup">
+        <div>
+            <h2>Parabéns!</h2>
+            <small><strong>*Você iniciou um passo importante no sucesso da sua empresa, 
+                clique no botão a baixo para pagar sua taxa de adesão!</strong></small>
+            <button>Ver meu boleto</button>
+        </div>
+        <b class="close">
+            x
+        </b>
+    </div>
+    <canvas id="my-canvas"></canvas>
+    <!-- /Container -->
+
+    <footer>
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-sm-6">
+                    <p>© 2024 Bolt 360</p>
+                </div>
+            </div>
+            <!-- /Row -->
+        </div>
+        <!-- /Container -->
+    </footer>
+    <!-- /Footer -->
+
+</div>
+<!-- /flex-column -->
+
+
+<!-- Modal terms -->
+<div class="modal fade" id="terms-txt" tabindex="-1" role="dialog" aria-labelledby="termsLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="termsLabel">Terms and conditions</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Lorem ipsum dolor sit amet, in porro albucius qui, in <strong>nec quod novum accumsan</strong>, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum sanctus, pro ne quod dicunt sensibus.</p>
+                <p>Lorem ipsum dolor sit amet, in porro albucius qui, in nec quod novum accumsan, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum sanctus, pro ne quod dicunt sensibus. Lorem ipsum dolor sit amet, <strong>in porro albucius qui</strong>, in nec quod novum accumsan, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum sanctus, pro ne quod dicunt sensibus.</p>
+                <p>Lorem ipsum dolor sit amet, in porro albucius qui, in nec quod novum accumsan, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum sanctus, pro ne quod dicunt sensibus.</p>
+            </div>
+        </div>
+        <!-- /modal-content -->
+    </div>
+    <!-- /modal-dialog -->
+</div>
+<!-- /modal -->
+<script src="./js/confeti.js"></script>
+<script>
+    var radios = document.querySelectorAll('input[name="product_opt"]');
+
+    // Adiciona um evento de clique para cada elemento de rádio
+    radios.forEach(function(radio) {
+        radio.addEventListener('click', function() {
+            // Verifica se o elemento de rádio está marcado
+            if (this.checked) {
+                // Obtém o label associado ao elemento de rádio clicado
+                var label = this.nextElementSibling.querySelector('strong').textContent;
+                // Retorna a string correspondente com base no valor do botão de rádio
+                var selectedOption = "";
+                if (this.value === "pix") {
+                    selectedOption = "PIX";
+                } else if (this.value === "cartao") {
+                    selectedOption = "CREDIT_CARD";
+                } else if (this.value === "boleto") {
+                    selectedOption = "BOLETO";
+                }
+                // Imprime no console o elemento selecionado
+                console.log("Elemento selecionado:", selectedOption);
+            }
+        });
+    });
+
+    document.addEventListener("DOMContentLoaded", function() {
+        var form = document.getElementById("wrapped");
+
+        form.addEventListener("submit", function(event) {
+            event.preventDefault(); // Evita o envio padrão do formulário
+
+            // Coleta dos dados do formulário
+            var formData = new FormData(form);
+
+            // Construção do objeto a ser enviado no corpo da primeira solicitação
+            var requestBody = {
+                "name": formData.get("nomeEmpresa"),
+                "cpfCnpj": formData.get("cnpj"), // Seu formulário não tem esse campo, adicione conforme necessário
+                "email": formData.get("email"),
+                "mobilePhone": formData.get("numero"),
+                "postalCode": formData.get("cepususario"),
+                "address": formData.get("rua"),
+                "addressNumber": formData.get("numero"),
+                "complement": formData.get("complemento") || "Sem complemento",
+                "province": formData.get("estado")
+            };
+
+            // Realiza a chamada AJAX para a primeira API
+            var xhr = new XMLHttpRequest();
+            xhr.open("POST", "https://proxy.bolt360.com.br/asaas/cliente", true);
+            xhr.setRequestHeader("Content-Type", "application/json");
+
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4) {
+                    if (xhr.status === 200) {
+                        // Resposta bem-sucedida
+                        var responseData = JSON.parse(xhr.responseText);
+                        console.log("Resposta da primeira solicitação:", responseData);
+
+                        // Extrai o ID do usuário retornado
+                        var userId = responseData.id;
+
+                        // Obtém o tipo de pagamento selecionado
+                        var selectedOption = getBillingType();
+
+                        // Constrói o objeto para a segunda solicitação
+                        var secondRequestBody = {
+                            "customer": userId,
+                            "billingType": selectedOption,
+                            "dueDate": getCurrentDate(),
+                            "value": "130.00",
+                            "description": "Taxa de adesão SETIRN"
+                        };
+
+                        // Realiza a chamada AJAX para a segunda API
+                        var secondXhr = new XMLHttpRequest();
+                        secondXhr.open("POST", "https://proxy.bolt360.com.br/asaas/pagamento", true);
+                        secondXhr.setRequestHeader("Content-Type", "application/json");
+
+                        secondXhr.onreadystatechange = function () {
+                            if (secondXhr.readyState === 4) {
+                                if (secondXhr.status === 200) {
+                                    let loading = document.querySelector('.loader')
+                                    loading.classList.add('active');
+                                        // Resposta bem-sucedida na segunda solicitação
+                                        console.log("Resposta da segunda solicitação:", secondXhr.responseText);
+                                        let principal = document.querySelector('.principal');
+                                    let secundario = document.querySelector('.secundario');
+                                    let close = document.querySelector('.close');
+                                    let confetti = document.querySelector('#my-canvas');
+                                    secundario.classList.add('active');
+                                    principal.classList.add('active');
+                                    confetti.classList.add('active')
+                                    close.addEventListener('click', function(){
+                                        popup.classList.remove('active');
+                                        confetti.classList.remove = 'active';
+                                    });
+                                    // Resposta bem-sucedida na segunda solicitação
+                                    var responseData = JSON.parse(secondXhr.responseText);
+                                    var paymentLink = responseData.invoiceUrl;
+                                    // Salva a URL de pagamento no atributo de dados do botão
+                                    var paymentButton = document.getElementById("seuBotao");
+                                    paymentButton.setAttribute("data-payment-url", paymentLink);
+                                    // Adiciona um evento de clique ao botão para redirecionar manualmente
+                                    paymentButton.addEventListener("click", function() {
+                                        window.location.href = paymentLink; // Redireciona o navegador para o link de pagamento
+                                    });
+                                } else {
+                                    // Erro na segunda requisição
+                                    console.error("Erro na segunda requisição:", secondXhr.status);
+                                    alert("Não foi possível registrar o pagamento. Por favor, tente novamente.");
+                                }
+                            }
+                        };
+
+                        // Envia a segunda solicitação
+                        secondXhr.send(JSON.stringify(secondRequestBody));
+                    } else {
+                        // Erro na primeira requisição
+                        console.error("Erro na primeira requisição:", xhr.status);
+                        alert("Não foi possível registrar o usuário. Por favor, tente novamente.");
+                    }
+                }
+            };
+
+            // Envia a primeira solicitação
+            xhr.send(JSON.stringify(requestBody));
+        });
+
+        // Função para obter o tipo de pagamento selecionado
+        function getBillingType() {
+            var radioButtons = document.getElementsByName("product_opt");
+            for (var i = 0; i < radioButtons.length; i++) {
+                if (radioButtons[i].checked) {
+                    // Retorna o valor correto de acordo com a opção selecionada
+                    if (radioButtons[i].value === "pix") {
+                        return "PIX";
+                    } else if (radioButtons[i].value === "cartao") {
+                        return "CREDIT_CARD";
+                    } else if (radioButtons[i].value === "boleto") {
+                        return "BOLETO";
+                    }
+                }
+            }
+            return ""; // Retorna vazio se nada for selecionado
+        }
+
+        // Função para obter a data atual no formato 'yyyy-mm-dd'
+        function getCurrentDate() {
+            var now = new Date();
+            var year = now.getFullYear();
+            var month = (now.getMonth() + 1).toString().padStart(2, '0');
+            var day = now.getDate().toString().padStart(2, '0');
+            return year + "-" + month + "-" + day;
+        }
+    });
+</script>
+
+<script>
+        var confettiSettings = { target: 'my-canvas' };
+        var confetti = new ConfettiGenerator(confettiSettings);
+        confetti.render();
+</script>
+	
+<!-- COMMON SCRIPTS -->
+<script src="js/common_scripts.min.js"></script>
+<script src="js/common_functions.js"></script>
+
+<!-- SPECIFIC SCRIPTS -->
+<script src="js/wizard_func_1.js"></script>
+
+</body>
+</html>

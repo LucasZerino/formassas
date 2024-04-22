@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Quotare - Multipurpose Quotation Request HTML Wizard Form">
+    <meta name="author" content="Ansonika">
+    <title>Quotare - Multipurpose Quotation Request HTML Wizard Form</title>
+    
+    <!-- Favicons-->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" type="image/x-icon" href="img/apple-touch-icon-57x57-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="img/apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="img/apple-touch-icon-144x144-precomposed.png">
+
+    <!-- GOOGLE WEB FONT -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- BASE CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+	<link href="css/vendors.css" rel="stylesheet">
+
+    <!-- YOUR CUSTOM CSS -->
+    <link href="css/custom.css" rel="stylesheet">
+
+</head>
+
+<body class="bg_style_1">
+
+<div id="preloader">
+    <div data-loader="circle-side"></div>
+</div><!-- /Preload -->
+
+<div id="loader_form">
+    <div data-loader="circle-side-2"></div>
+</div><!-- /loader_form -->
+
+<div class="min-vh-100 d-flex flex-column bg_cover">
+
+    <header>
+        <div class="container-fluid">
+            <div class="row d-flex align-items-center">
+                <div class="col-6">
+                    <a data-bs-toggle="offcanvas" href="#offcanvasNav" role="button" class="btn_nav me-2"><i class="bi bi-list"></i></a>
+                    <a href="index.html"><img src="img/logo.svg" alt="" width="100" height="35" class="img-fluid"></a>
+                </div>
+                <div class="col-6">
+                    <div id="social">
+                        <ul>
+                            <li><a href="#0"><i class="bi bi-facebook"></i></a></li>
+                            <li><a href="#0"><i class="bi bi-twitter-x"></i></a></li>
+                            <li><a href="#0"><i class="bi bi-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                    <!-- /social -->
+                </div>
+            </div>
+        </div>
+        <!-- /container -->
+    </header>
+    <!-- /header -->
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNav">
+        <div class="offcanvas-header">
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul>
+                <li><a href="index.html" class="animated_link">SEO Services</a></li>
+                <li><a href="index-2.html" class="animated_link">Home Alarms</a></li>
+                <li><a href="index-3.html" class="animated_link">Removals</a></li>
+                <li><a href="index-4.html" class="animated_link">Web Services Calculator</a></li>
+                <li><a href="index-5.html" class="animated_link">Web Services Branch</a></li>
+            </ul>
+            <hr>
+            <ul>
+                <li><a href="contact.html" class="animated_link">Contacts</a></li>
+                <li><a href="#0" class="animated_link">Purchase this template</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- /offcanvas nav -->
+
+    <div class="container-fluid d-flex flex-column my-auto">
+        <div>
+            <div id="wizard_container">
+                <div id="top-wizard">
+                    <div id="progressbar"></div>
+                </div>
+                <!-- /top-wizard -->
+                <div class="decorative_bg bg_1"></div>
+                <form id="wrapped" method="POST">
+                    <input id="website" name="website" type="text" value="">
+                    <!-- Leave input above for security protection, read docs for details -->
+                    <div id="middle-wizard">
+                        <div class="step">
+                            <div class="question_title">
+                                <h3>Where do you <span class="highlight">Need to install</span> the Alarm?</h3>
+                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+                            </div>
+                            <div class="row justify-content-center">
+                                <div class="col-lg-7 col-md-10">
+                                    <div class="list_block">
+                                        <ul>
+                                            <li>
+                                                <div class="checkbox_radio_container">
+                                                    <input type="radio" id="apartment" name="location" class="required" value="Apartment">
+                                                    <label class="radio" for="apartment"></label>
+                                                    <label for="apartment" class="wrapper">Apartment</label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="checkbox_radio_container">
+                                                    <input type="radio" id="villa" name="location" class="required" value="Villa">
+                                                    <label class="radio" for="villa"></label>
+                                                    <label for="villa" class="wrapper">Villa</label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="checkbox_radio_container">
+                                                    <input type="radio" id="office" name="location" class="required" value="Office">
+                                                    <label class="radio" for="office"></label>
+                                                    <label for="office" class="wrapper">Office</label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="checkbox_radio_container">
+                                                    <input type="radio" id="shop" name="location" class="required" value="Shop">
+                                                    <label class="radio" for="shop"></label>
+                                                    <label for="shop" class="wrapper">Shop</label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="checkbox_radio_container">
+                                                    <input type="radio" id="garage" name="location" class="required" value="Garage">
+                                                    <label class="radio" for="garage"></label>
+                                                    <label for="garage" class="wrapper">Garage</label>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- /list_block-->
+                                </div>
+                            </div>
+                            <!-- /row -->
+                        </div>
+                        <!-- /Step -->
+                        <div class="step">
+                            <div class="question_title">
+                                <h3>Does it have <span class="highlight">Secondary</span> accesses?</h3>
+                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+                            </div>
+                            <div class="row justify-content-center">
+                                <div class="col-lg-7 col-md-10">
+                                    <div class="list_block">
+                                        <ul>
+                                            <li>
+                                                <div class="checkbox_radio_container">
+                                                    <input type="checkbox" id="garden" name="accesses[]" class="required" value="Garden">
+                                                    <label class="checkbox" for="garden"></label>
+                                                    <label for="garden" class="wrapper">Garden</label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="checkbox_radio_container">
+                                                    <input type="checkbox" id="balcony" name="accesses[]" class="required" value="Balcony or terrace">
+                                                    <label class="checkbox" for="balcony"></label>
+                                                    <label for="balcony" class="wrapper">Balcony or terrace</label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="checkbox_radio_container">
+                                                    <input type="checkbox" id="any" name="accesses[]" class="required" value="any one">
+                                                    <label class="checkbox" for="any"></label>
+                                                    <label for="any" class="wrapper">Any one</label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="checkbox_radio_container">
+                                                    <input type="checkbox" id="not_interested" name="accesses[]" class="required" value="Not interested in protecting outdoor">
+                                                    <label class="checkbox" for="not_interested"></label>
+                                                    <label for="not_interested" class="wrapper">I'm not interested in protecting outdoor</label>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <small><em>Multiple selections *</em></small>
+                                    </div>
+                                    <!-- /list_block-->
+                                </div>
+                            </div>
+                            <!-- /row -->
+                        </div>
+                        <!-- /Step -->
+                        <div class="step">
+                            <div class="question_title">
+                                <h3>Please <span class="highlight">Answer</span> the following Questions</h3>
+                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+                            </div>
+                            <div class="row justify-content-center">
+                                <div class="col-lg-7 col-md-10">
+                                    <div class="form-group">
+                                        <h6>Do you have the armored door?</h6>
+                                        <div class="qty-buttons">
+                                            <input type="button" value="+" class="qtyplus" name="armored_door">
+                                            <input type="text" name="armored_door" id="armored_door" value="" class="qty form-control required" placeholder="How many?">
+                                            <input type="button" value="-" class="qtyminus" name="armored_door">
+                                        </div>
+                                    </div>
+                                    <!-- /form-group -->
+                                    <div class="form-group">
+                                        <h6>How many windows do you want to protect?</h6>
+                                        <div class="qty-buttons">
+                                            <input type="button" value="+" class="qtyplus" name="windows">
+                                            <input type="text" name="windows" id="windows" value="" class="qty form-control required" placeholder="How many?">
+                                            <input type="button" value="-" class="qtyminus" name="windows">
+                                        </div>
+                                    </div>
+                                    <!-- /form-group -->
+                                    <div class="form-group">
+                                        <h6>How many areas do you want to protect?</h6>
+                                        <div class="qty-buttons">
+                                            <input type="button" value="+" class="qtyplus" name="areas">
+                                            <input type="text" name="areas" id="areas" value="" class="qty form-control required" placeholder="How many?">
+                                            <input type="button" value="-" class="qtyminus" name="areas">
+                                        </div>
+                                    </div>
+                                    <!-- /form-group -->
+                                </div>
+                            </div>
+                            <!-- /row -->
+                        </div>
+                        <!-- /Step -->
+                        <div class="step">
+                            <div class="question_title">
+                                <h3>What is your <span class="highlight">Budget?</span></h3>
+                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+                            </div>
+                            <div class="row justify-content-center mt-5">
+                                <div class="col-lg-7 col-md-10">
+                                    <div class="rounded_slider">
+                                        <div id="budget_slider"></div>
+                                        <p>Eu sed epicuri mentitum, ex mei hinc justo, no cum dictas deserunt gubergren.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /Step -->
+                        <div class="submit step">
+                            <div class="question_title">
+                                <h3>Please fill with your <span class="highlight">Details</span></h3>
+                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+                            </div>
+                            <div class="row justify-content-center">
+                                <div class="col-lg-7 col-md-10">
+                                    <div class="form-group">
+                                        <input type="text" name="first_last_name" id="first_last_name" class="form-control required">
+                                        <label for="first_last_name">First and Last Name</label>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" name="email" id="email" class="form-control required">
+                                        <label for="email">Your Email</label>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" name="telephone" id="telephone" class="form-control required">
+                                        <label for="telephone">Your Telephone</label>
+                                    </div>
+                                    <div class="terms">
+                                        <label class="container_check">Please accept our <a href="#" data-bs-toggle="modal" data-bs-target="#terms-txt">Terms and conditions</a>
+                                            <input type="checkbox" name="terms" value="Yes" class="required">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /row -->
+                        </div>
+                        <!-- /Step -->
+                    </div>
+                    <!-- /middle-wizard -->
+                    <div id="bottom-wizard">
+                        <button type="button" name="backward" class="backward btn_1">Backward</button>
+                        <button type="button" name="forward" class="forward btn_1">Forward</button>
+                        <button type="submit" name="process" class="submit btn_1">Submit</button>
+                    </div>
+                    <!-- /bottom-wizard -->
+                </form>
+            </div>
+            <!-- /Wizard container -->
+        </div>
+    </div>
+    <!-- /Container -->
+
+    <footer>
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-sm-6">
+                    <p>© 2023 Quotare</p>
+                </div>
+            </div>
+            <!-- /Row -->
+        </div>
+        <!-- /Container -->
+    </footer>
+    <!-- /Footer -->
+
+</div>
+<!-- /flex-column -->
+
+
+<!-- Modal terms -->
+<div class="modal fade" id="terms-txt" tabindex="-1" role="dialog" aria-labelledby="termsLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="termsLabel">Terms and conditions</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Lorem ipsum dolor sit amet, in porro albucius qui, in <strong>nec quod novum accumsan</strong>, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum sanctus, pro ne quod dicunt sensibus.</p>
+                <p>Lorem ipsum dolor sit amet, in porro albucius qui, in nec quod novum accumsan, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum sanctus, pro ne quod dicunt sensibus. Lorem ipsum dolor sit amet, <strong>in porro albucius qui</strong>, in nec quod novum accumsan, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum sanctus, pro ne quod dicunt sensibus.</p>
+                <p>Lorem ipsum dolor sit amet, in porro albucius qui, in nec quod novum accumsan, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum sanctus, pro ne quod dicunt sensibus.</p>
+            </div>
+        </div>
+        <!-- /modal-content -->
+    </div>
+    <!-- /modal-dialog -->
+</div>
+<!-- /modal -->
+	
+<!-- COMMON SCRIPTS -->
+<script src="js/common_scripts.min.js"></script>
+<script src="js/common_functions.js"></script>
+
+<!-- SPECIFIC SCRIPTS -->
+<script src="js/wizard_func_2.js"></script>
+
+</body>
+</html>
