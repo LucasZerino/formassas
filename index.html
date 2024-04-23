@@ -40,25 +40,6 @@
 
 
 <div class="min-vh-100 d-flex flex-column bg_cover">
-
-    <header>
-        <div class="container-fluid">
-            <div class="row d-flex align-items-center">
-                <div class="col-6">
-                    <a href="index.html"><img src="./imgBolt/logoSetirn.png" alt="" width="100" height="35" class="img-fluid"></a>
-                </div>
-                <div class="col-6">
-                    <div id="social">
-                        <ul>
-                            
-                        </ul>
-                    </div>
-                    <!-- /social -->
-                </div>
-            </div>
-        </div>
-        <!-- /container -->
-    </header>
     <!-- /header -->
 	<!-- /offcanvas nav -->
 
@@ -70,7 +51,7 @@
                 </div>
                 <!-- /top-wizard -->
                 <div class="decorative_bg bg_3"></div>
-                <form id="wrapped" >
+                <form id="wrapped">
                     <input id="website" name="website" type="text" value="">
                     <!-- Leave input above for security protection, read docs for details -->
                     <div id="middle-wizard">
@@ -280,11 +261,11 @@
                                 <div class="col-lg-7 col-md-10">
                                     <div class="list_block">
                                        <div class="botaoadd">
-                                        <a class="btn2" id="seuBotao">
+                                       <button class="btn2" id="seuBotao" onclick="irparaboleto()" >
                                             <span>
                                                 Ir para o pagamento
                                             </span>
-                                        </a>
+                                       </button>
                                        </div>
                                           <small><em><strong>A taxa de filiação (paga no ato da inscrição) R$130 (cento e trinta reais). *</strong></em></small>
                                     </div>
@@ -303,7 +284,7 @@
             <h2>Parabéns!</h2>
             <small><strong>*Você iniciou um passo importante no sucesso da sua empresa, 
                 clique no botão a baixo para pagar sua taxa de adesão!</strong></small>
-            <button>Ver meu boleto</button>
+            <button onclick="irparaboleto()">Ver meu boleto</button>
         </div>
         <b class="close">
             x
@@ -316,7 +297,7 @@
         <div class="container-fluid">
             <div class="row align-items-center">
                 <div class="col-sm-6">
-                    <p>© 2024 Bolt 360</p>
+                   <a class="footer2" href="" target="_blank"> <p>© 2024 Bolt 360</p></a>
                 </div>
             </div>
             <!-- /Row -->
@@ -446,6 +427,7 @@
                                         popup.classList.remove('active');
                                         confetti.classList.remove = 'active';
                                     });
+
                                     // Resposta bem-sucedida na segunda solicitação
                                     var responseData = JSON.parse(secondXhr.responseText);
                                     var paymentLink = responseData.invoiceUrl;
@@ -456,6 +438,39 @@
                                     paymentButton.addEventListener("click", function() {
                                         window.location.href = paymentLink; // Redireciona o navegador para o link de pagamento
                                     });
+
+                                    // Realiza a chamada AJAX para o webhook após o sucesso da segunda solicitação
+                                    var webhookRequestBody = {
+                                        "name": formData.get("nomeEmpresa"),
+                                        "cpfCnpj": formData.get("cnpj"), // Seu formulário não tem esse campo, adicione conforme necessário
+                                        "email": formData.get("email"),
+                                        "mobilePhone": formData.get("numero"),
+                                        "postalCode": formData.get("cepususario"),
+                                        "address": formData.get("rua"),
+                                        "addressNumber": formData.get("numero"),
+                                        "complement": formData.get("complemento") || "Sem complemento",
+                                        "province": formData.get("estado"),
+                                        "paymentLink": paymentLink // Adicionando o link de pagamento ao corpo da solicitação do webhook
+                                    };
+
+                                    var webhookXhr = new XMLHttpRequest();
+                                    webhookXhr.open("POST", "https://prodn8n.bolt360.com.br/webhook/emailsetirn", true);
+                                    webhookXhr.setRequestHeader("Content-Type", "application/json");
+                                    webhookXhr.setRequestHeader("header", "asdiuh128heu1-2diuaisd120j0j28903u12jd10j2j12312d81592418918919");
+
+                                    webhookXhr.onreadystatechange = function () {
+                                        if (webhookXhr.readyState === 4) {
+                                            if (webhookXhr.status === 200) {
+                                                console.log("Webhook enviado com sucesso:", webhookXhr.responseText);
+                                                // Se necessário, adicione aqui qualquer tratamento adicional após o sucesso do webhook
+                                            } else {
+                                                console.error("Erro ao enviar o webhook:", webhookXhr.status);
+                                                // Se necessário, adicione aqui qualquer tratamento adicional para lidar com falhas no webhook
+                                            }
+                                        }
+                                    };
+
+                                    webhookXhr.send(JSON.stringify(webhookRequestBody));
                                 } else {
                                     // Erro na segunda requisição
                                     console.error("Erro na segunda requisição:", secondXhr.status);
@@ -505,6 +520,13 @@
             return year + "-" + month + "-" + day;
         }
     });
+
+    function irparaboleto() {
+        console.log("Clicou no botão de pagamento");
+        event.preventDefault(); 
+        var paymentLink = document.getElementById("seuBotao").getAttribute("data-payment-url");
+        window.location.href = paymentLink;
+    }
 </script>
 
 <script>

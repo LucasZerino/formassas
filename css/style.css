@@ -1206,7 +1206,7 @@ input.qtyminus:hover {
   font-weight: bold;
   position: absolute;
   font-size: 28px !important;
-  font-size: 28px !important/16pxrem;
+  font-size: 28px !important;
   color: #333;
 }
 .rs-tooltip-text:before {
@@ -1667,13 +1667,18 @@ body[dir=rtl] .fl-form .fl-wrap-select:after {
   cursor: pointer;
 }
 
+.footer2{
+  position: absolute;
+  bottom: 30px;
+}
+
 #my-canvas{
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100vh;
-  z-index: 1000;
+  z-index: -1;
   visibility: hidden;
 }
 
@@ -1694,6 +1699,7 @@ body[dir=rtl] .fl-form .fl-wrap-select:after {
 .secundario{
   visibility: hidden;
   position: fixed;
+  z-index: 1003 !important;
 }
 
 .secundario.active {
@@ -1716,6 +1722,11 @@ body[dir=rtl] .fl-form .fl-wrap-select:after {
   letter-spacing: 1px;
   overflow: hidden;
   border: 1px solid #363636;
+  z-index: 1002;
+}
+
+.btn2:hover{
+  cursor: pointer;
 }
 
 .containercenter{
